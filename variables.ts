@@ -89,3 +89,21 @@ function loopFor(n:number[]):void{
 }
 var y:number[]=[12,24,36,48,60];
 loopFor(y);
+
+// rest parameter
+console.log("--------------rest parameter-------------")
+function restParameter(...n:number[]):void{
+    for(var i:number=0;i<n.length;i++){
+    console.log(n[i])
+    }
+}
+restParameter(12,23,4,54,23);
+
+console.log("-------------------------")
+function restParameter1(s:string,...n:number[]):void{
+    for(var i:number=0;i<n.length;i++){
+        console.log(n[i])
+    }
+    console.log(s)
+}
+restParameter1("guarav",1,2,3,5,4,);

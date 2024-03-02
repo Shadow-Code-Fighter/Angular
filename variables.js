@@ -76,3 +76,26 @@ function loopFor(n) {
 }
 var y = [12, 24, 36, 48, 60];
 loopFor(y);
+// rest parameter
+console.log("--------------rest parameter-------------");
+function restParameter() {
+    var n = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        n[_i] = arguments[_i];
+    }
+    for (var i = 0; i < n.length; i++) {
+        console.log(n[i]);
+    }
+}
+restParameter(12, 23, 4, 54, 23);
+function restParameter1(s) {
+    var n = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        n[_i - 1] = arguments[_i];
+    }
+    for (var i = 0; i < n.length; i++) {
+        console.log(n[i]);
+    }
+    console.log(s);
+}
+restParameter1("guarav", 1, 2, 3, 5, 4);
