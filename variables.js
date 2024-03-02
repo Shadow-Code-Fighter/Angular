@@ -1,4 +1,5 @@
 // variables in typescript
+console.log("-------------variables-----------------");
 var x1 = 10;
 console.log(x1);
 var x2 = 10.9;
@@ -11,6 +12,7 @@ var x5 = 'stallin';
 // x5=`gaurav`
 console.log(x5);
 // json object
+console.log("-------------json object-----------------");
 var obj = {
     "name": "mike",
     "age": 30
@@ -18,6 +20,7 @@ var obj = {
 console.log(obj.name, obj.age);
 console.log(obj.name);
 // create array in ts
+console.log("-------------create array-----------------");
 var arr = [10, 12, 14, 16, 18];
 console.log(arr);
 console.log(arr[0]);
@@ -26,6 +29,7 @@ console.log(arr[2]);
 console.log(arr[3]);
 console.log(arr[4]);
 // function 
+console.log("-------------function-----------------");
 function addNum(x1, x2) {
     console.log(x1 + x2);
 }
@@ -35,20 +39,40 @@ function test() {
 }
 test();
 // return method
+console.log("-------------return method--------------");
 function addNum1(x1, x2) {
     return (x1 + x2);
 }
 var v = addNum(10, 20);
 console.log(v);
 // concatenation
+console.log("------------concatenation---------------");
 function addNum2(x1, x2) {
     return x1 + String(x2);
 }
 var x = addNum2("mike", 20);
 console.log(x);
 // optional parameter
+console.log("------------optional parameter---------------");
 function test1(x1, x2) {
     console.log(x1);
     console.log(x1);
 }
 test1(10);
+// default parameter
+console.log("--------------default parameter-------------");
+function test2(x1, defaultValue) {
+    if (defaultValue === void 0) { defaultValue = 10; }
+    console.log(x1);
+    console.log(defaultValue);
+}
+test2(40);
+// for loop
+console.log("--------------for loop-------------");
+function loopFor(n) {
+    for (var i = 0; i < n.length; i++) {
+        console.log(n[i]);
+    }
+}
+var y = [12, 24, 36, 48, 60];
+loopFor(y);
