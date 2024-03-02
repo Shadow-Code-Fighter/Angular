@@ -38,5 +38,28 @@ function addNum(x1:number,x2:number):void{
 }
 addNum(10,20)
 
+function test():void{
+    console.log("Hello world")
+}
+test();
+// return method
+function addNum1(x1:number,x2:number):number{
+    return (x1+x2)
+}
+var v = addNum(10,20)
+console.log(v)
+
+// concatenation
+function addNum2(x1:String,x2:number):String{
+    return x1+String(x2);
+}
+var x:String=addNum2("mike",20);
+console.log(x)
 
 
+// optional parameter
+function test1(x1:number,x2?:number):void{
+    console.log(x1);
+    console.log(x1);
+}
+test1(10);
