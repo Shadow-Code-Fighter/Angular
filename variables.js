@@ -88,6 +88,7 @@ function restParameter() {
     }
 }
 restParameter(12, 23, 4, 54, 23);
+console.log("-------------------------");
 function restParameter1(s) {
     var n = [];
     for (var _i = 1; _i < arguments.length; _i++) {
@@ -99,3 +100,52 @@ function restParameter1(s) {
     console.log(s);
 }
 restParameter1("guarav", 1, 2, 3, 5, 4);
+// backtick(``)
+console.log("------------backtick(``)-------------");
+function backTick(name, city) {
+    console.log("".concat(name, " ").concat(city));
+}
+backTick('mike', 'chennai');
+// Arrow function
+var varName = function (x1, x2) {
+    return x1 + x2;
+};
+var result = varName(10, 30);
+console.log(result);
+// if you want to remove {} bracket then return keyword is not working
+var varName1 = function (x1, x2) { return x1 + x2; };
+var result = varName1(12, 12);
+console.log(result);
+// zero parameter 
+var varName2 = function () {
+    console.log("Hello World");
+};
+varName2();
+// Assignment
+// develop function to multiply two number return multiple two number
+function multiTwoNum(x1, x2) {
+    return x1 * x2;
+}
+var result = multiTwoNum(10, 10);
+console.log(result);
+// create a array to store 3 values
+var arr = [12, 14, 16];
+for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+// create an arraw function to multiply two numbers
+var varName = function (x1, x2) { return x1 * x2; };
+var resu = varName(1, 2);
+console.log(resu);
+// enum
+console.log("------------enum------------");
+var Val;
+(function (Val) {
+    Val[Val["Red"] = 0] = "Red";
+    Val[Val["Green"] = 1] = "Green";
+    Val[Val["Yellow"] = 2] = "Yellow";
+})(Val || (Val = {}));
+console.log(Val);
+console.log(Val[0]);
+console.log(Val[1]);
+console.log(Val[2]);

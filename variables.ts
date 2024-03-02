@@ -107,3 +107,60 @@ function restParameter1(s:string,...n:number[]):void{
     console.log(s)
 }
 restParameter1("guarav",1,2,3,5,4,);
+
+// backtick(``)
+console.log("------------backtick(``)-------------")
+function backTick(name:String,city:any):void{
+    console.log(`${name} ${city}`);
+}
+backTick('mike','chennai');
+
+
+// Arrow function
+var varName =(x1:number,x2:number):number=>{
+    return x1+x2
+};
+var result:number =varName(10,30);
+console.log(result);
+
+// if you want to remove {} bracket then return keyword is not working
+var varName1 =(x1:number,x2:number):number=>x1+x2
+var result:number =varName1(12,12);
+console.log(result);
+
+// zero parameter 
+var varName2 =():void=>{
+    console.log("Hello World")
+};
+varName2();
+
+// Assignment
+// develop function to multiply two number return multiple two number
+function multiTwoNum(x1:number,x2:number):number{
+    return x1*x2;
+}
+var result:number = multiTwoNum(10,10);
+console.log(result);
+
+// create a array to store 3 values
+var arr:number[]=[12,14,16];
+for(var i:number=0;i<arr.length;i++){
+    console.log(arr[i])
+}
+
+// create an arraw function to multiply two numbers
+var varName = (x1:number,x2:number):number=>x1*x2
+var resu:number = varName(1,2)
+console.log(resu);
+
+// enum
+console.log("------------enum------------")
+enum Val{
+    Red,
+    Green,
+    Yellow
+}
+console.log(Val);
+console.log(Val[0])
+console.log(Val[1])
+console.log(Val[2])
